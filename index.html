@@ -68,8 +68,8 @@
   :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
 
   /* ---------- brand mark ---------- */
-  .logo-chip{background:#fff;border-radius:6px;padding:4px 9px;display:inline-flex;align-items:center;line-height:0;}
-  .jhp-logo{height:20px;width:auto;display:block;}
+  .logo-chip{background:#fff;border-radius:6px;padding:4px 9px;width:126px;display:inline-flex;align-items:center;line-height:0;overflow:hidden;}
+  .jhp-logo{height:20px;width:auto;max-width:none;flex:none;display:block;}
   .favicon-chip{background:#fff;border-radius:6px;width:28px;height:28px;display:none;align-items:center;justify-content:center;flex:none;}
   .jhp-favicon{width:18px;height:18px;object-fit:contain;display:block;}
   .sidebar.collapsed .logo-chip{display:none;}
@@ -791,28 +791,28 @@
 
     <section class="page" id="page-p4">
       <div class="page-head"><h1 class="i18n"><span class="dotmark"></span>&nbsp; 대학별 원서 작성하기</h1></div>
-      <p class="i18n page-sub">대학 검색부터 진학어플라이·유웨이어플라이 제공 대학의 원서 입력까지 순서대로 안내해드려요.</p>
+      <p class="i18n page-sub">지원할 대학을 검색하고 대학별 원서를 작성하는 방법을 안내해 드려요.</p>
 
-      <h2 class="i18n h-sec" id="s4-1">공통대학검색</h2>
+      <h2 class="i18n h-sec" id="s4-1">1. 지원할 대학 검색하기</h2>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
           <img class="i18n" src="https://image.jinhakapply.com/ApplyBank/Report/begnner_guide03_1_1.png" alt="공통대학검색 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>대학명을 입력하여 검색해요.</span></li>
-        <li class="i18n"><span>접수목록 내에서 지원하려는 대학을 선택해요.</span></li>
+        <li class="i18n"><span>대학명을 입력해 검색해요.</span></li>
+        <li class="i18n"><span>접수 목록에서 지원할 대학을 선택해요.</span></li>
       </ol>
 
-      <h2 class="i18n h-sec" id="s4-2">유의사항 확인</h2>
+      <h2 class="i18n h-sec" id="s4-2">2. 유의사항 확인하기</h2>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
           <img class="i18n" src="https://image.jinhakapply.com/ApplyBank/Report/begnner_guide03_2_1.png" alt="대학별 유의사항 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>지원하고자 하는 대학의 유의사항(모집요강 내용 안내 및 결제방법 안내)을 확인해요.</span></li>
-        <li class="i18n"><span>원서작성하기를 클릭해요.</span></li>
+        <li class="i18n"><span>모집요강과 결제 방법 등 대학별 유의사항을 확인해요.</span></li>
+        <li class="i18n"><span><b>[원서작성하기]</b>를 클릭해요.</span></li>
       </ol>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
@@ -820,46 +820,57 @@
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>대학별 확인 사항 및 동의 사항을 체크해요.</span></li>
-        <li class="i18n"><span>원서 작성하기를 클릭해요.</span></li>
+        <li class="i18n"><span>대학별 확인 사항과 동의 사항을 확인하고 체크해요.</span></li>
+        <li class="i18n"><span><b>[원서 작성하기]</b>를 클릭해요.</span></li>
       </ol>
       <div class="warn">
         <span class="i18n tag">확인해 주세요</span>
         <ul>
-          <li class="i18n">모집 군 선택은 정시에만 해당돼요.</li>
+          <li class="i18n">모집군 선택은 정시모집에만 해당돼요.</li>
         </ul>
       </div>
 
-      <h2 class="i18n h-sec" id="s4-3">대학원서 입력 - 진학어플라이 제공대학</h2>
+      <h2 class="i18n h-sec" id="s4-3">진학어플라이 제공 대학</h2>
+      <h3 class="i18n h-sub">1. 원서 정보 입력하기</h3>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
-          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_3_1.gif" alt="대학 원서 입력(진학어플라이 제공대학) 화면" style="width:100%;height:auto;display:block;">
+          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_3_1.gif" alt="대학 원서 입력 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>공통원서 작성 내용을 확인해요. 내용은 자동으로 불러오며 확인만 가능하고 수정은 공통원서 작성 페이지에서 해야 해요.</span></li>
-        <li class="i18n"><span>대학별 추가 작성 내용(전형, 모집단위, 사진, 지원자구분)을 입력해요.</span></li>
-        <li class="i18n"><span>미결제 원서 대학 제공에 대한 동의 여부를 선택해요. 동의안함 선택 시 대학측 미결제 원서리스트에 노출되지 않아요.</span></li>
+        <li class="i18n"><span>자동으로 불러온 공통원서 정보를 확인해요.</span></li>
+        <li class="i18n"><span>전형, 모집단위, 사진, 지원자 구분 등 대학별 정보를 입력해요.</span></li>
+        <li class="i18n"><span>미결제 원서 정보를 대학에 제공할지 선택해요.</span></li>
       </ol>
+      <div class="warn">
+        <span class="i18n tag">확인해 주세요</span>
+        <ul>
+          <li class="i18n">공통원서 정보는 이 화면에서 수정할 수 없어요. 수정하려면 <b>[공통원서작성]</b>에서 변경해 주세요.</li>
+          <li class="i18n"><b>[동의 안 함]</b>을 선택하면 결제하지 않은 원서가 대학의 미결제 원서 목록에 표시되지 않아요.</li>
+        </ul>
+      </div>
+
+      <h3 class="i18n h-sub">2. 작성 내용 확인하기</h3>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
           <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_3_2.gif" alt="대학별 원서 작성 확인 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>공통원서 작성 내용 및 대학별 추가 작성 내용을 확인해요.</span></li>
-        <li class="i18n"><span>수정하기 또는 결제하기를 클릭해요.</span></li>
+        <li class="i18n"><span>공통원서와 대학별 작성 내용을 확인해요.</span></li>
+        <li class="i18n"><span>내용을 변경하려면 <b>[수정하기]</b>, 접수를 진행하려면 <b>[결제하기]</b>를 클릭해요.</span></li>
       </ol>
 
-      <h2 class="i18n h-sec" id="s4-4">대학원서 입력 - 유웨이어플라이 제공대학</h2>
+      <h2 class="i18n h-sec" id="s4-4">유웨이어플라이 제공 대학</h2>
+      <h3 class="i18n h-sub">1. 유의사항과 동의 내용 확인하기</h3>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
-          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_1.gif" alt="대학 원서 입력(유웨이어플라이 제공대학) 화면" style="width:100%;height:auto;display:block;">
+          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_1.gif" alt="대학별 유의사항 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>유웨이어플라이에서 제공하는 대학의 유의사항을 확인해요.</span></li>
-        <li class="i18n"><span>원서작성하기를 클릭해요.</span></li>
+        <li class="i18n"><span>대학별 유의사항을 확인해요.</span></li>
+        <li class="i18n"><span><b>[원서작성하기]</b>를 클릭해요.</span></li>
       </ol>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
@@ -867,23 +878,26 @@
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>대학별 확인 사항 및 동의 사항을 체크해요.</span></li>
-        <li class="i18n"><span>원서 작성하기를 클릭해요.</span></li>
+        <li class="i18n"><span>대학별 확인 사항과 동의 사항을 확인하고 체크해요.</span></li>
+        <li class="i18n"><span><b>[원서 작성하기]</b>를 클릭해요.</span></li>
       </ol>
       <div class="warn">
         <span class="i18n tag">확인해 주세요</span>
         <ul>
-          <li class="i18n">모집 군 선택은 정시에만 해당돼요.</li>
+          <li class="i18n">모집군 선택은 정시모집에만 해당돼요.</li>
         </ul>
       </div>
+
+      <h3 class="i18n h-sub">2. 공통원서 등록하기</h3>
+      <p class="i18n step-label">진학어플라이에 작성한 공통원서가 있는 경우</p>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
-          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_3.gif" alt="진학어플라이 공통원서 불러오기 화면" style="width:100%;height:auto;display:block;">
+          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_3.gif" alt="공통원서 불러오기 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>진학어플라이에 작성한 공통원서가 있는 경우 불러오기를 클릭해요.</span></li>
-        <li class="i18n"><span>확인버튼을 클릭하면 진학어플라이에서 작성한 공통원서를 가져와요.</span></li>
+        <li class="i18n"><span><b>[진학어플라이 공통원서 불러오기]</b>를 클릭해요.</span></li>
+        <li class="i18n"><span><b>[확인]</b>을 클릭해 작성한 공통원서를 가져와요.</span></li>
       </ol>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
@@ -891,25 +905,30 @@
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>진학어플라이에서 가져온 공통원서를 확인하고, 공통원서 비밀번호를 입력한 후 등록 버튼을 클릭해요.</span></li>
+        <li class="i18n"><span>불러온 공통원서 내용을 확인해요.</span></li>
+        <li class="i18n"><span>공통원서 비밀번호를 입력하고 <b>[등록]</b>을 클릭해요.</span></li>
       </ol>
+
+      <p class="i18n step-label">작성한 공통원서가 없는 경우</p>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
-          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_5.gif" alt="공통원서가 없는 경우 화면" style="width:100%;height:auto;display:block;">
+          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_5.gif" alt="공통원서 작성 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>진학어플라이에서 작성한 공통원서가 없는 경우, 공통원서 비밀번호를 입력한 후 등록 버튼을 클릭해요.</span></li>
-        <li class="i18n"><span>진학어플라이에서 작성한 것과 같이 공통원서를 작성해요.</span></li>
+        <li class="i18n"><span>사용할 공통원서 비밀번호를 입력하고 <b>[등록]</b>을 클릭해요.</span></li>
+        <li class="i18n"><span>지원자 정보와 학교 정보 등 공통원서 항목을 작성해요.</span></li>
       </ol>
+
+      <h3 class="i18n h-sub">3. 대학별 항목 작성하기</h3>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
-          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_6.gif" alt="대학별 항목 작성 및 저장 화면" style="width:100%;height:auto;display:block;">
+          <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide03_4_6.gif" alt="대학별 항목 작성 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
         <li class="i18n"><span>공통원서 비밀번호를 입력해요.</span></li>
-        <li class="i18n"><span>대학별 항목을 작성한 후 저장하기 버튼을 클릭해요.</span></li>
+        <li class="i18n"><span>대학별 항목을 작성하고 <b>[저장하기]</b>를 클릭해요.</span></li>
       </ol>
 
       <div class="pagefoot">
@@ -985,15 +1004,20 @@
       </ol>
 
       <h2 class="i18n h-sec" id="s5-3">묶음 결제</h2>
+      <p class="i18n">진학어플라이와 유웨이어플라이에서 작성한 미결제 원서를 한 번에 모아 결제할 수 있어요.</p>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
           <img class="i18n" src="https://image.jinhakapply.com/ApplyBank/Report/begnner_guide04_3_1.png" alt="묶음 결제 목록 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>진학어플라이와 유웨이어플라이에서 작성한 미결제 원서 리스트예요. 묶음 결제하기 버튼을 클릭하여 결제를 진행해요.</span></li>
-        <li class="i18n"><span>진학어플라이에서 묶음 결제 클릭 시, 진학어플라이에서 작성한 모든 미결제 원서들이 결제돼요.</span></li>
-        <li class="i18n"><span>유웨이어플라이에서 묶음 결제 클릭 시, 유웨이어플라이에서 작성한 모든 미결제 원서들이 결제돼요.</span></li>
+        <li class="i18n"><span>미결제 원서 목록을 확인해요.</span></li>
+        <li class="i18n"><span>결제할 사이트의 <b>[묶음 결제하기]</b>를 클릭해요.
+          <ul style="margin:6px 0 0;padding-left:18px;font-size:15px;color:var(--text-muted);">
+            <li>진학어플라이: 진학어플라이에서 작성한 원서</li>
+            <li>유웨이어플라이: 유웨이어플라이에서 작성한 원서</li>
+          </ul>
+        </span></li>
       </ol>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
@@ -1001,13 +1025,13 @@
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>결제를 원하는 원서를 선택해요.</span></li>
-        <li class="i18n"><span>결제방법을 선택한 후 결제를 진행해요.</span></li>
+        <li class="i18n"><span>함께 결제할 원서를 선택해요.</span></li>
+        <li class="i18n"><span>결제 방법을 선택하고 결제를 진행해요.</span></li>
       </ol>
       <div class="warn">
         <span class="i18n tag">확인해 주세요</span>
         <ul>
-          <li class="i18n">전형료가 면제되는 원서는 묶음결제가 불가능해요.</li>
+          <li class="i18n">전형료가 면제된 원서는 묶음 결제할 수 없어요.</li>
         </ul>
       </div>
 
@@ -1027,33 +1051,42 @@
           <img class="i18n" src="https://image.jinhakapply.com/ApplyBank/Report/begnner_guide05_1_1.png" alt="내 원서 보관함 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
-      <ol class="steps">
-        <li class="i18n"><span>미결제 원서들이 보관되어 있어요.</span></li>
-        <li class="i18n"><span>결제한 원서들이 보관되어 있어요.</span></li>
-        <li class="i18n"><span>사용자의 희망대학 리스트가 보관되어 있어요.</span></li>
-      </ol>
+      <p class="i18n"><b>[내 원서 보관함]</b>에서는 다음 목록을 확인할 수 있어요.</p>
+      <ul style="margin:0 0 14px;padding-left:18px;color:var(--text);">
+        <li class="i18n">작성한 미결제 원서</li>
+        <li class="i18n">결제를 완료한 원서</li>
+        <li class="i18n">희망대학으로 등록한 대학</li>
+      </ul>
 
-      <h2 class="i18n h-sec" id="s6-2">출력물 확인</h2>
+      <h2 class="i18n h-sec" id="s6-2">작성한 원서 확인하기</h2>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
           <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide05_2_1.gif" alt="작성한 원서 내역 확인 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>작성한 원서 및 자기소개서 확인을 클릭해요.</span></li>
+        <li class="i18n"><span><b>[작성한 원서 및 자기소개서 확인]</b>을 클릭해요.</span></li>
         <li class="i18n"><span>공통원서 비밀번호를 입력해요.</span></li>
-        <li class="i18n"><span>비밀번호 인증 후 작성한 원서 내용을 확인할 수 있어요.</span></li>
+        <li class="i18n"><span>비밀번호 인증을 완료하면 작성한 원서 내용을 확인할 수 있어요.</span></li>
       </ol>
+
+      <h2 class="i18n h-sec" id="s6-3">출력물 확인하기</h2>
       <figure class="mock">
         <div class="mock-inner" style="max-width:790px;overflow:hidden;">
           <img class="i18n" src="https://imgorg.jinhakapply.com/ApplyBank/commapply/common/begnner_guide05_2_2.gif" alt="출력물 확인 화면" style="width:100%;height:auto;display:block;">
         </div>
       </figure>
       <ol class="steps">
-        <li class="i18n"><span>결제 성공 후 출력물을 확인해요.</span></li>
+        <li class="i18n"><span>결제를 완료한 원서에서 출력물을 선택해요.</span></li>
         <li class="i18n"><span>공통원서 비밀번호를 입력해요.</span></li>
-        <li class="i18n"><span>비밀번호 인증 후 출력물 내용을 확인할 수 있어요. (인증 실패 시 민감 정보가 * 처리돼요.)</span></li>
+        <li class="i18n"><span>비밀번호 인증을 완료하면 출력물의 전체 내용을 확인할 수 있어요.</span></li>
       </ol>
+      <div class="warn">
+        <span class="i18n tag">확인해 주세요</span>
+        <ul>
+          <li class="i18n">비밀번호 인증에 실패하면 출력물의 민감정보가 *로 표시돼요.</li>
+        </ul>
+      </div>
 
       <div class="pagefoot">
         <a data-page="p5">← 이전<b>05. 원서 결제하기</b></a>
